@@ -2,6 +2,7 @@ package himma
 
 import (
 	"github.com/devplayg/eggcrate"
+	"github.com/devplayg/himma/asset"
 )
 
 const (
@@ -13,7 +14,7 @@ func GetAssetMap(assets ...string) (map[string][]byte, error) {
 	assetMap := make(map[string][]byte, 0)
 	for i := range assets {
 		if assets[i] == Bootstrap4 {
-			if err := merge(bootstrap4, assetMap); err != nil {
+			if err := merge(asset.bootstrap4, assetMap); err != nil {
 				return nil, err
 			}
 			continue
