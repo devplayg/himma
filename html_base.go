@@ -1,37 +1,14 @@
 package himma
 
-func Base() string {
-	// /assets/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css
-	// /assets/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js
-	// /assets/plugins/bootstrap-select/bootstrap-select.min.css
-	// /assets/plugins/bootstrap-select/bootstrap-select.min.js
-	// /assets/plugins/bootstrap-table/bootstrap-table-export.min.js
-	// /assets/plugins/bootstrap-table/bootstrap-table.min.css
-	// /assets/plugins/bootstrap-table/bootstrap-table.min.js
-	// /assets/plugins/bootstrap-table/tableExport.min.js
-	// /assets/plugins/holderjs/holder.min.js
-	// /assets/plugins/jquery-validation/additional-methods.min.js
-	// /assets/plugins/jquery-validation/jquery.validate.min.js
-	// /assets/plugins/jquery.mask/jquery.mask.min.js
-	// /assets/plugins/js.cookie/js.cookie-2.2.1.min.js
-	// /assets/plugins/moment/moment-timezone-with-data.min.js
-	// /assets/plugins/moment/moment-timezone.min.js
-	// /assets/plugins/moment/moment.min.js
-	// /assets/plugins/progressbar.js/progressbar.min.js
-	// /assets/plugins/sweetalert2/sweetalert2.min.css
-	// /assets/plugins/sweetalert2/sweetalert2.min.js
-	// /assets/plugins/videojs/video-js.min.css
-	// /assets/plugins/videojs/video.min.js
-	// /assets/plugins/videojs/videojs-http-streaming.min.js
-	// /assets/plugins/waitMe/waitMe.min.css
-	// /assets/plugins/waitMe/waitMe.min.js
+import "fmt"
 
-	return `<!DOCTYPE html>
+func Base(title string) string {
+	return fmt.Sprintf(`<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>
-        RTSP Stream
+        %s
     </title>
     <meta name="description" content="Page Titile">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -229,5 +206,5 @@ func Base() string {
 	</script>
 	{{ block "script" . }}{{ end }}
 	</body>
-	</html>`
+	</html>`, title)
 }
