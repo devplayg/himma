@@ -3,6 +3,10 @@ package himma
 import "fmt"
 
 func Base(title string) string {
+	return smartAdminBase(title)
+}
+
+func smartAdminBase(title string) string {
 	return fmt.Sprintf(`<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -189,16 +193,29 @@ func Base(title string) string {
 	<script src="assets/js/vendors.bundle.js"></script>
 	<script src="assets/js/app.bundle.js"></script>
 	<script src="assets/js/sweetalert2.bundle.js"></script>
-	<script src="assets/plugins/bootstrap-table/bootstrap-table.min.js"></script>
-	<script src="assets/plugins/bootstrap-table/tableExport.min.js"></script>
-	<script src="assets/plugins/bootstrap-table/bootstrap-table-export.min.js"></script>
-	<script src="assets/plugins/jquery.mask.min.js"></script>
-	<script src="assets/plugins/js.cookie-2.2.1.min.js"></script>
-	<script src="assets/plugins/progressbar.js/progressbar.min.js"></script>
-	<script src="assets/plugins/moment/moment.min.js"></script>
-	<script src="assets/plugins/moment/moment-timezone.min.js"></script>
-	<script src="assets/plugins/jquery-validation/jquery.validate.min.js"></script>
-	<script src="assets/plugins/waitMe/waitMe.min.js"></script>
+
+	<script src="/assets/plugins/waitMe-31.10.17/waitMe.min.css"></script>
+	<script src="/assets/plugins/waitMe-31.10.17/waitMe.min.js"></script>
+	<script src="/assets/plugins/video-js-7.7.4/video-js.min.css"></script>
+	<script src="/assets/plugins/video-js-7.7.4/video.min.js"></script>
+	<script src="/assets/plugins/video-js-7.7.4/videojs-http-streaming.min.js"></script>
+	<script src="/assets/plugins/progressbar.js-1.0.1/progressbar.min.js"></script>
+	<script src="/assets/plugins/moment-2.24.0/moment-timezone-with-data.min.js"></script>
+	<script src="/assets/plugins/moment-2.24.0/moment-with-locales.min.js"></script>
+	<script src="/assets/plugins/moment-2.24.0/moment.min.js"></script>
+	<script src="/assets/plugins/js.cookie-2.2.1/js.cookie-2.2.1.min.js"></script>
+	<script src="/assets/plugins/jquery-validation-1.19.1/jquery.validate.min.js"></script>
+	<script src="/assets/plugins/jquery-mask-1.14.16/jquery.mask.min.js"></script>
+	<script src="/assets/plugins/holder-2.9/holder.min.js"></script>
+	<script src="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table-export.min.js"></script>
+	<script src="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.css"></script>
+	<script src="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.js"></script>
+	<script src="/assets/plugins/bootstrap-table-1.15.5/tableExport.min.js"></script>
+	<script src="/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.css"></script>
+	<script src="/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.js"></script>
+	<script src="/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.css"></script>
+	<script src="/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.js"></script>
+
 	<script>
 	$(document).ready(function () {
 
