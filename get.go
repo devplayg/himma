@@ -2,7 +2,7 @@ package himma
 
 import (
     "github.com/devplayg/eggcrate"
-	"github.com/devplayg/himma/asset"
+    "github.com/devplayg/himma/asset"
 )
 
 func GetAssetMap(assets ...string) (map[string][]byte, error) {
