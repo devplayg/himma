@@ -7,7 +7,7 @@
 
 package asset
 
-var BootstrapDatepicker_1_9_0=`Dv+BBAEC/4IAAQwBCgAA/jA//4IAAkcvYXNzZXRzL3BsdWdpbnMvYm9vdHN0cmFwLWRhdGVwaWNrZXItMS45LjAvYm9vdHN0cmFw
+var bootstrapDatepicker_1_9_0=`Dv+BBAEC/4IAAQwBCgAA/jA//4IAAkcvYXNzZXRzL3BsdWdpbnMvYm9vdHN0cmFwLWRhdGVwaWNrZXItMS45LjAvYm9vdHN0cmFw
 LWRhdGVwaWNrZXIubWluLmNzc/4IHh+LCAAAAAAAAP/sW0uP47Ydv++nYDFY7MzCkunHPCxhD20SFAHSXppDgbYHmqQsYmRRoOix
 J8Z+94KkZEvWk7QHDdDA2PVY/L9f+lkmp1//9Al8BT8iSTOGX6kAERfgL5zLXAqUgbeZv/IhuI+lzPJgOt0wGe/WPubb6e6Q82Qn
 GU/z6bpk8MhJ0sMn8FXJ/oVhmuaUgF1KqAAypuDPGcIxLVfA27xUEUyn+/3eR3rd52IzTQxNPv3l5x9++vs/fvLmPlSSp58++Wdd
