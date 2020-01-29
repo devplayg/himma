@@ -32,8 +32,8 @@ func smartAdminBase(title string) string {
     <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" media="screen, print" href="assets/css/fa-regular.css">
     <link rel="stylesheet" media="screen, print" href="assets/css/fa-solid.css">
-    <link rel="stylesheet" media="screen, print" href="assets/plugins/bootstrap-table/bootstrap-table.min.css">
-<link rel="stylesheet" media="screen, print" href="assets/plugins/waitMe/waitMe.min.css">
+    <link rel="stylesheet" media="screen, print" href="assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.css">
+	<link rel="stylesheet" media="screen, print" href="assets/plugins/waitMe-31.10.17/waitMe.min.css">
     {{ block "css" . }}{{ end }}
 </head>
 <body class="mod-bg-1 nav-function-fixed">
@@ -194,27 +194,27 @@ func smartAdminBase(title string) string {
 	<script src="assets/js/app.bundle.js"></script>
 	<script src="assets/js/sweetalert2.bundle.js"></script>
 
-	<script src="/assets/plugins/waitMe-31.10.17/waitMe.min.css"></script>
-	<script src="/assets/plugins/waitMe-31.10.17/waitMe.min.js"></script>
-	<script src="/assets/plugins/video-js-7.7.4/video-js.min.css"></script>
-	<script src="/assets/plugins/video-js-7.7.4/video.min.js"></script>
-	<script src="/assets/plugins/video-js-7.7.4/videojs-http-streaming.min.js"></script>
-	<script src="/assets/plugins/progressbar.js-1.0.1/progressbar.min.js"></script>
-	<script src="/assets/plugins/moment-2.24.0/moment-timezone-with-data.min.js"></script>
-	<script src="/assets/plugins/moment-2.24.0/moment-with-locales.min.js"></script>
-	<script src="/assets/plugins/moment-2.24.0/moment.min.js"></script>
-	<script src="/assets/plugins/js.cookie-2.2.1/js.cookie-2.2.1.min.js"></script>
-	<script src="/assets/plugins/jquery-validation-1.19.1/jquery.validate.min.js"></script>
-	<script src="/assets/plugins/jquery-mask-1.14.16/jquery.mask.min.js"></script>
-	<script src="/assets/plugins/holder-2.9/holder.min.js"></script>
-	<script src="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table-export.min.js"></script>
-	<script src="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.css"></script>
-	<script src="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.js"></script>
-	<script src="/assets/plugins/bootstrap-table-1.15.5/tableExport.min.js"></script>
-	<script src="/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.css"></script>
-	<script src="/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.js"></script>
-	<script src="/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.css"></script>
-	<script src="/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.js"></script>
+	<script src="assets/plugins/waitMe-31.10.17/waitMe.min.css"></script>
+	<script src="assets/plugins/waitMe-31.10.17/waitMe.min.js"></script>
+	<script src="assets/plugins/video-js-7.7.4/video-js.min.css"></script>
+	<script src="assets/plugins/video-js-7.7.4/video.min.js"></script>
+	<script src="assets/plugins/video-js-7.7.4/videojs-http-streaming.min.js"></script>
+	<script src="assets/plugins/progressbar.js-1.0.1/progressbar.min.js"></script>
+	<script src="assets/plugins/moment-2.24.0/moment-timezone-with-data.min.js"></script>
+	<script src="assets/plugins/moment-2.24.0/moment-with-locales.min.js"></script>
+	<script src="assets/plugins/moment-2.24.0/moment.min.js"></script>
+	<script src="assets/plugins/js.cookie-2.2.1/js.cookie-2.2.1.min.js"></script>
+	<script src="assets/plugins/jquery-validation-1.19.1/jquery.validate.min.js"></script>
+	<script src="assets/plugins/jquery-mask-1.14.16/jquery.mask.min.js"></script>
+	<script src="assets/plugins/holder-2.9/holder.min.js"></script>
+	<script src="assets/plugins/bootstrap-table-1.15.5/bootstrap-table-export.min.js"></script>
+	<script src="assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.css"></script>
+	<script src="assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.js"></script>
+	<script src="assets/plugins/bootstrap-table-1.15.5/tableExport.min.js"></script>
+	<script src="assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.css"></script>
+	<script src="assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.js"></script>
+	<script src="assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.css"></script>
+	<script src="assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.js"></script>
 
 	<script>
 	$(document).ready(function () {
