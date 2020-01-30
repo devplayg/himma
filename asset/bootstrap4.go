@@ -59,7 +59,7 @@
 	/assets/webfonts/summernote.woff
 */
 
-package himma
+package asset
 
 var bootstrap4 = `Dv+BBAEC/4IAAQwBCgAA/SUY8v+CADgcL2Fzc2V0cy9jc3MvcGFnZS1pbnZvaWNlLmNzc/4CkR+LCAAAAAAAAP+UVc9v2zoMvvuv
 4OtDgbSIHDu/46JAe3uHt8uAnYYdaJtxtFiSISlOsqH/+2DHSSW3PkzJ5RM/SiT1kX4RlHOESnNp4XcAsLOiHAcAqcrP7QbAked2

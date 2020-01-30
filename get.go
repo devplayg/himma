@@ -2,36 +2,27 @@ package himma
 
 import (
 	"github.com/devplayg/eggcrate"
-)
-
-const (
-	Bootstrap4 = "bs4"
-	Plugins    = "plugins"
+	"github.com/devplayg/himma/asset"
 )
 
 func GetAssetMap(assets ...string) (map[string][]byte, error) {
 	assetMap := make(map[string][]byte, 0)
 	for i := range assets {
-		if assets[i] == Bootstrap4 {
-			if err := merge(bootstrap4, assetMap); err != nil {
-				return nil, err
-			}
+
+		raw := asset.GetRaw(assets[i])
+		if raw == nil {
 			continue
 		}
 
-		if assets[i] == Plugins {
-			if err := merge(plugins, assetMap); err != nil {
-				return nil, err
-			}
-			continue
+		if err := merge(assetMap, raw); err != nil {
+			return nil, err
 		}
-
 	}
 	return assetMap, nil
 }
 
-func merge(data string, assetMap map[string][]byte) error {
-	m, err := eggcrate.Decode(data)
+func merge(assetMap map[string][]byte, data *string) error {
+	m, err := eggcrate.Decode(*data)
 	if err != nil {
 		return err
 	}
