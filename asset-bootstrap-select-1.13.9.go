@@ -5,7 +5,7 @@
 	/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.js
 */
 
-package asset
+package himma
 
 var bootstrapSelect_1_13_9 = `Dv+BBAEC/4IAAQwBCgAA/kO3/4IAAkAvYXNzZXRzL3BsdWdpbnMvYm9vdHN0cmFwLXNlbGVjdC0xLjEzLjkvYm9vdHN0cmFwLXNl
 bGVjdC5taW4uY3Nz/ghkH4sIAAAAAAAA/7xaX4/buBF/L9DvoEMQJJsztbJ3ncvKaIA2uIcD0r5c33p9oKSRzZoiCZJee9fY716Q

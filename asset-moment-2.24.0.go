@@ -6,7 +6,7 @@
 	/assets/plugins/moment-2.24.0/moment.min.js
 */
 
-package asset
+package himma
 
 var moment_2_24_0 = `Dv+BBAEC/4IAAQwBCgAA/QHwDf+CAAM+L2Fzc2V0cy9wbHVnaW5zL21vbWVudC0yLjI0LjAvbW9tZW50LXRpbWV6b25lLXdpdGgt
 ZGF0YS5taW4uanP+m3EfiwgAAAAAAAD/7L2LV+JI8D/6r9R6z5mffMdkqpPwcHa5e0BwdCSIEoX9zXfunABRo5ggEB9s9n+/pzvh

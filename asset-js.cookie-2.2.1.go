@@ -4,7 +4,7 @@
 	/assets/plugins/js.cookie-2.2.1/js.cookie-2.2.1.min.js
 */
 
-package asset
+package himma
 
 var jsCookie_2_2_1 = `Dv+BBAEC/4IAAQwBCgAA/gOd/4IAATYvYXNzZXRzL3BsdWdpbnMvanMuY29va2llLTIuMi4xL2pzLmNvb2tpZS0yLjIuMS5taW4u
 anP+A18fiwgAAAAAAAD/jFTdbts4E73vU8gE6nIihpbt/HyfVSJInBboArsLbNubVbQARY0kOrZkSHSygah3X8i2JMNoF3ul4fAM

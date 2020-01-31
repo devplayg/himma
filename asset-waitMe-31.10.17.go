@@ -5,7 +5,7 @@
 	/assets/plugins/waitMe-31.10.17/waitMe.min.js
 */
 
-package asset
+package himma
 
 var waitMe_31_10_17 = `Dv+BBAEC/4IAAQwBCgAA/hCV/4IAAi4vYXNzZXRzL3BsdWdpbnMvd2FpdE1lLTMxLjEwLjE3L3dhaXRNZS5taW4uY3Nz/gnJH4sI
 AAAAAAAA/7RbW4/qOBJ+71+R1QoNHJG0cwWCNNo9L/u00j7O7Gh0ZIgBq4ONHNOXg/q/j+w4iZM44DSMWt3KzVWfy1Wfy3b187en

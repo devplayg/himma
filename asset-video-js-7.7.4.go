@@ -6,7 +6,7 @@
 	/assets/plugins/video-js-7.7.4/videojs-http-streaming.min.js
 */
 
-package asset
+package himma
 
 var videoJs_7_7_4 = `Dv+BBAEC/4IAAQwBCgAA/QNCY/+CAAM8L2Fzc2V0cy9wbHVnaW5zL3ZpZGVvLWpzLTcuNy40L3ZpZGVvanMtaHR0cC1zdHJlYW1p
 bmcubWluLmpz/QEceR+LCAAAAAAAAP/svfl327iSMPr7/BUy546GiCCapBbLlGGP23a6/d3Ezuell1EYH1qEbXRkUE1CSdwW//d3

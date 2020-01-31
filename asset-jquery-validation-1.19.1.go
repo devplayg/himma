@@ -4,7 +4,7 @@
 	/assets/plugins/jquery-validation-1.19.1/jquery.validate.min.js
 */
 
-package asset
+package himma
 
 var jqueryValidation_1_19_1 = `Dv+BBAEC/4IAAQwBCgAA/h7s/4IAAT8vYXNzZXRzL3BsdWdpbnMvanF1ZXJ5LXZhbGlkYXRpb24tMS4xOS4xL2pxdWVyeS52YWxp
 ZGF0ZS5taW4uanP+HqUfiwgAAAAAAAD/tHxtk9s2muD3/RUUJkMDFpqS2nYSU4Y1Xk9S66vEmYs9u1UraS4gAErslkgNSbndEXk/

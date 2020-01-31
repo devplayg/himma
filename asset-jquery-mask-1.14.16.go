@@ -4,7 +4,7 @@
 	/assets/plugins/jquery-mask-1.14.16/jquery.mask.min.js
 */
 
-package asset
+package himma
 
 var jqueryMask_1_14_16 = `Dv+BBAEC/4IAAQwBCgAA/g3D/4IAATYvYXNzZXRzL3BsdWdpbnMvanF1ZXJ5LW1hc2stMS4xNC4xNi9qcXVlcnkubWFzay5taW4u
 anP+DYUfiwgAAAAAAAD/hFp9k5s4mv/fn8LWpShpLNP2ZW52g1rj6s30XOV2ku6bnp2rW8ebEiBeAhYEhLsdw3ffkgQYbGfmnxik

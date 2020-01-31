@@ -7,7 +7,7 @@
 	/assets/plugins/bootstrap-table-1.15.5/tableExport.min.js
 */
 
-package asset
+package himma
 
 var bootstrapTable_1_15_5 = `Dv+BBAEC/4IAAQwBCgAA/u3z/4IABEQvYXNzZXRzL3BsdWdpbnMvYm9vdHN0cmFwLXRhYmxlLTEuMTUuNS9ib290c3RyYXAtdGFi
 bGUtZXhwb3J0Lm1pbi5qc/4uYh+LCAAAAAAAAP/kvet227a2MPp/PYWEncECS9O0lN5OqSBaiRMnbnNxYzdto2p509SUxIQCFRCy

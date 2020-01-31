@@ -4,7 +4,7 @@
 	/assets/plugins/progressbar.js-1.0.1/progressbar.min.js
 */
 
-package asset
+package himma
 
 var progressbarJs_1_0_1 = `Dv+BBAEC/4IAAQwBCgAA/htL/4IAATcvYXNzZXRzL3BsdWdpbnMvcHJvZ3Jlc3NiYXIuanMtMS4wLjEvcHJvZ3Jlc3NiYXIubWlu
 Lmpz/hsMH4sIAAAAAAAA/8x8e5PbNrLv//spNEytDjBqUZTG42SpwFP2xLmbqiT2iZ3duqXRcYEg+JihSJmE5hGJ3/0WAD5Aihp7

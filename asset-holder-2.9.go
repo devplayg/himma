@@ -4,7 +4,7 @@
 	/assets/plugins/holder-2.9/holder.min.js
 */
 
-package asset
+package himma
 
 var holder_2_9 = `Dv+BBAEC/4IAAQwBCgAA/ixR/4IAASgvYXNzZXRzL3BsdWdpbnMvaG9sZGVyLTIuOS9ob2xkZXIubWluLmpz/iwhH4sIAAAAAAAA
 /6x9a5bbNpfg/6xCQvLRQBGiHnZVbMooHbtiJ+l24oyrkv6mVUoOioQkxhSoD4RKUiSuYv7OBmYbs5RZyRw8+BRlJ+lOznERwMXr
