@@ -5,7 +5,7 @@
 	/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.js
 */
 
-package asset
+package himma
 
 var bootstrapDatepicker_1_9_0 = `Dv+BBAEC/4IAAQwBCgAA/jA//4IAAkcvYXNzZXRzL3BsdWdpbnMvYm9vdHN0cmFwLWRhdGVwaWNrZXItMS45LjAvYm9vdHN0cmFw
 LWRhdGVwaWNrZXIubWluLmNzc/4IHh+LCAAAAAAAAP/sW0uP47Ydv++nYDFY7MzCkunHPCxhD20SFAHSXppDgbYHmqQsYmRRoOix
