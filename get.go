@@ -19,10 +19,8 @@ const (
 	WaitMe_31_10_17           = "waitMe_31_10_17"
 )
 
-var rawAssetMap map[string]*string
-
-func init() {
-	rawAssetMap = map[string]*string{
+func GetAssetMap(assets ...string) (AssetMap, error) {
+	rawAssetMap := map[string]*string{
 		Bootstrap4:                &bootstrap4,
 		BootstrapDatepicker_1_9_0: &bootstrapDatepicker_1_9_0,
 		BootstrapSelect_1_13_9:    &bootstrapSelect_1_13_9,
@@ -36,32 +34,22 @@ func init() {
 		VideoJs_7_7_4:             &videoJs_7_7_4,
 		WaitMe_31_10_17:           &waitMe_31_10_17,
 	}
-}
 
-func GetRaw(key string) *string {
-	if val, have := rawAssetMap[key]; have {
-		return val
-	}
-	return nil
-}
-
-func GetAssetMap(assets ...string) (map[string][]byte, error) {
-	assetMap := make(map[string][]byte, 0)
+	assetMap := make(AssetMap, 0)
 	for i := range assets {
-
-		raw := GetRaw(assets[i])
-		if raw == nil {
+		_, have := rawAssetMap[assets[i]]
+		if !have {
 			continue
 		}
 
-		if err := merge(assetMap, raw); err != nil {
+		if err := merge(assetMap, rawAssetMap[assets[i]]); err != nil {
 			return nil, err
 		}
 	}
 	return assetMap, nil
 }
 
-func merge(assetMap map[string][]byte, data *string) error {
+func merge(assetMap AssetMap, data *string) error {
 	m, err := eggcrate.Decode(*data)
 	if err != nil {
 		return err
