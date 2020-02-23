@@ -1,4 +1,4 @@
-module github.com/devplayg/himma
+module github.com/devplayg/himma/v2
 
 go 1.13
 
