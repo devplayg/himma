@@ -29,21 +29,21 @@ func smartAdminBase() string {
     <!-- Remove Tap Highlight on Windows Phone IE -->
     <meta name="msapplication-tap-highlight" content="no">
     <!-- base css -->
-    <link rel="stylesheet" media="screen, print" href="assets/css/vendors.bundle.css">
-    <link rel="stylesheet" media="screen, print" href="assets/css/app.bundle.css">
-    <link rel="stylesheet" media="screen, print" href="assets/css/notifications/sweetalert2/sweetalert2.bundle.css">
-    <link rel="stylesheet" media="screen, print" href="assets/css/themes/cust-theme-3.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/vendors.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/app.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/notifications/sweetalert2/sweetalert2.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/themes/cust-theme-3.css">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
-    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg">
-    <link rel="stylesheet" media="screen, print" href="assets/css/fa-regular.css">
-    <link rel="stylesheet" media="screen, print" href="assets/css/fa-solid.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon.png">
+    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-regular.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
 
-    <link rel="stylesheet" media="screen, print" href="assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.css">
-    <link rel="stylesheet" media="screen, print" href="assets/plugins/waitMe-31.10.17/waitMe.min.css">
-    <link rel="stylesheet" media="screen, print" href="assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.css">
-    <link rel="stylesheet" media="screen, print" href="assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/plugins/waitMe-31.10.17/waitMe.min.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.css">
 
     {{ block "css" . }}{{ end }}
 </head>
@@ -55,7 +55,7 @@ func smartAdminBase() string {
         <aside class="page-sidebar">
             <div class="page-logo">
                 <a href="/" class="page-logo-link press-scale-down d-flex align-items-center position-relative">
-                    <img src="assets/img/logo.png" class="" alt="" aria-roledescription="logo">
+                    <img src="/assets/img/logo.png" class="" alt="" aria-roledescription="logo">
                     <span class="page-logo-text mr-1"> {{.AppName}}</span>
                     <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
                 </a>
@@ -63,7 +63,7 @@ func smartAdminBase() string {
             <!-- BEGIN PRIMARY NAVIGATION -->
             <nav id="js-primary-nav" class="primary-nav" role="navigation">
                 <div class="info-card">
-                    <img src="assets/img/member.png" class="profile-image rounded-circle" alt="{{.AppName}}">
+                    <img src="/assets/img/member.png" class="profile-image rounded-circle" alt="{{.AppName}}">
                     <div class="info-card-text">
                         <a href="#" class="d-flex align-items-center text-white">
                             <span class="text-truncate text-truncate-md d-inline-block">
@@ -73,7 +73,7 @@ func smartAdminBase() string {
                         <span class="d-inline-block text-truncate text-truncate-sm">{{.Phrase2}}</span>
                     </div>
 
-                    <img src="assets/img/cover.png" class="cover" alt="cover">
+                    <img src="/assets/img/cover.png" class="cover" alt="cover">
                 </div>
 
                 <ul id="js-nav-menu" class="nav-menu">
@@ -108,7 +108,7 @@ func smartAdminBase() string {
                 <!-- we need this logo when user switches to nav-function-top -->
                 <div class="page-logo">
                     <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative">
-                        <img src="assets/img/logo.png" alt="{{.AppName}}" aria-roledescription="logo">
+                        <img src="/assets/img/logo.png" alt="{{.AppName}}" aria-roledescription="logo">
                         <span class="page-logo-text mr-1">{{.AppName}}</span>
                         <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
                         <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>
@@ -241,24 +241,24 @@ func smartAdminBase() string {
     </a>
 </nav>
 <!-- END Quick Menu -->
-<script src="assets/js/vendors.bundle.js"></script>
-<script src="assets/js/app.bundle.js"></script>
-<script src="assets/js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
+<script src="/assets/js/vendors.bundle.js"></script>
+<script src="/assets/js/app.bundle.js"></script>
+<script src="/assets/js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
 
-<script src="assets/plugins/waitMe-31.10.17/waitMe.min.js"></script>
-<script src="assets/plugins/progressbar.js-1.0.1/progressbar.min.js"></script>
-<script src="assets/plugins/moment-2.24.0/moment.min.js"></script>
-<script src="assets/plugins/moment-2.24.0/moment-timezone-with-data.min.js"></script>
-<script src="assets/plugins/moment-2.24.0/moment-with-locales.min.js"></script>
-<script src="assets/plugins/js.cookie-2.2.1/js.cookie-2.2.1.min.js"></script>
-<script src="assets/plugins/jquery-validation-1.19.1/jquery.validate.min.js"></script>
-<script src="assets/plugins/jquery-mask-1.14.16/jquery.mask.min.js"></script>
-<script src="assets/plugins/holder-2.9/holder.min.js"></script>
-<script src="assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.js"></script>
-<script src="assets/plugins/bootstrap-table-1.15.5/bootstrap-table-export.min.js"></script>
-<script src="assets/plugins/bootstrap-table-1.15.5/tableExport.min.js"></script>
-<script src="assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.js"></script>
-<script src="assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.js"></script>
+<script src="/assets/plugins/waitMe-31.10.17/waitMe.min.js"></script>
+<script src="/assets/plugins/progressbar.js-1.0.1/progressbar.min.js"></script>
+<script src="/assets/plugins/moment-2.24.0/moment.min.js"></script>
+<script src="/assets/plugins/moment-2.24.0/moment-timezone-with-data.min.js"></script>
+<script src="/assets/plugins/moment-2.24.0/moment-with-locales.min.js"></script>
+<script src="/assets/plugins/js.cookie-2.2.1/js.cookie-2.2.1.min.js"></script>
+<script src="/assets/plugins/jquery-validation-1.19.1/jquery.validate.min.js"></script>
+<script src="/assets/plugins/jquery-mask-1.14.16/jquery.mask.min.js"></script>
+<script src="/assets/plugins/holder-2.9/holder.min.js"></script>
+<script src="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.js"></script>
+<script src="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table-export.min.js"></script>
+<script src="/assets/plugins/bootstrap-table-1.15.5/tableExport.min.js"></script>
+<script src="/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.js"></script>
+<script src="/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.js"></script>
 
 <script>
     $(document).ready(function () {
