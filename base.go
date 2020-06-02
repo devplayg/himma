@@ -39,12 +39,10 @@ func smartAdminBase() string {
     <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg">
     <link rel="stylesheet" media="screen, print" href="/assets/css/fa-regular.css">
     <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
-
     <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.css">
     <link rel="stylesheet" media="screen, print" href="/assets/plugins/waitMe-31.10.17/waitMe.min.css">
     <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.css">
     <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.css">
-
     {{ block "css" . }}{{ end }}
 </head>
 <body class="mod-bg-1 nav-function-fixed">
@@ -139,8 +137,7 @@ func smartAdminBase() string {
             <footer class="page-footer" role="contentinfo">
                 <div class="d-flex align-items-center flex-1 text-muted">
                     <span class="hidden-md-down ">
-                        <a href="{{.Url}}" class="text-primary fw-500" title="gotbootstrap.com" target="_blank">
-                        </a>
+                        <a href="{{.Url}}" class="text-primary fw-500" title="gotbootstrap.com" target="_blank"></a>
                     </span>
                 </div>
                 <div>
@@ -148,8 +145,6 @@ func smartAdminBase() string {
                         <li><a href="intel_introduction.html fs-sm" class="text-secondary">{{.AppName}} v{{.Version}}</a></li>
                     </ul>
                 </div>
-                <!--
-                -->
             </footer>
 
             <!-- END Page Footer -->
@@ -244,12 +239,10 @@ func smartAdminBase() string {
 <script src="/assets/js/vendors.bundle.js"></script>
 <script src="/assets/js/app.bundle.js"></script>
 <script src="/assets/js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
-
 <script src="/assets/plugins/waitMe-31.10.17/waitMe.min.js"></script>
 <script src="/assets/plugins/progressbar.js-1.0.1/progressbar.min.js"></script>
-<script src="/assets/plugins/moment-2.24.0/moment.min.js"></script>
-<script src="/assets/plugins/moment-2.24.0/moment-timezone-with-data.min.js"></script>
 <script src="/assets/plugins/moment-2.24.0/moment-with-locales.min.js"></script>
+<script src="/assets/plugins/moment-2.24.0/moment-timezone-with-data.min.js"></script>
 <script src="/assets/plugins/js.cookie-2.2.1/js.cookie-2.2.1.min.js"></script>
 <script src="/assets/plugins/jquery-validation-1.19.1/jquery.validate.min.js"></script>
 <script src="/assets/plugins/jquery-mask-1.14.16/jquery.mask.min.js"></script>
@@ -259,12 +252,6 @@ func smartAdminBase() string {
 <script src="/assets/plugins/bootstrap-table-1.15.5/tableExport.min.js"></script>
 <script src="/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.js"></script>
 <script src="/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.js"></script>
-
-<script>
-    $(document).ready(function () {
-
-    });
-</script>
 {{ block "script" . }}{{ end }}
 </body>
 </html>`
