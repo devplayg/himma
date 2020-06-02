@@ -14,4 +14,3 @@ The `himma` is sets of static files embedded in Go.
 - video-js-7.7.4
 - waitMe-31.10.17
 
-- [ ] addRaw(src string)

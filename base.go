@@ -39,7 +39,7 @@ func smartAdminBase() string {
     <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg">
     <link rel="stylesheet" media="screen, print" href="/assets/css/fa-regular.css">
     <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-table-1.16.0/bootstrap-table.min.css">
     <link rel="stylesheet" media="screen, print" href="/assets/plugins/waitMe-31.10.17/waitMe.min.css">
     <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.css">
     <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.css">
@@ -247,9 +247,10 @@ func smartAdminBase() string {
 <script src="/assets/plugins/jquery-validation-1.19.1/jquery.validate.min.js"></script>
 <script src="/assets/plugins/jquery-mask-1.14.16/jquery.mask.min.js"></script>
 <script src="/assets/plugins/holder-2.9/holder.min.js"></script>
-<script src="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table.min.js"></script>
-<script src="/assets/plugins/bootstrap-table-1.15.5/bootstrap-table-export.min.js"></script>
-<script src="/assets/plugins/bootstrap-table-1.15.5/tableExport.min.js"></script>
+<script src="/assets/plugins/bootstrap-table-1.16.0/bootstrap-table.min.js"></script>
+<script src="/assets/plugins/bootstrap-table-1.16.0/bootstrap-table-export.min.js"></script>
+<script src="/assets/plugins/bootstrap-table-1.16.0/tableExport.min.js"></script>
+<script src="/assets/plugins/bootstrap-table-1.16.0/bootstrap-table-cookie.min.js"></script>
 <script src="/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.js"></script>
 <script src="/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.js"></script>
 {{ block "script" . }}{{ end }}

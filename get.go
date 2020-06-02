@@ -8,7 +8,7 @@ const (
 	Bootstrap4                = "bootstrap4"
 	BootstrapDatepicker_1_9_0 = "bootstrapDatepicker_1_9_0"
 	BootstrapSelect_1_13_9    = "bootstrapSelect_1_13_9"
-	BootstrapTable_1_15_5     = "bootstrapTable_1_15_5"
+	BootstrapTable_1_16_0     = "BootstrapTable_1_16_0"
 	Holder_2_9                = "holder_2_9"
 	JqueryMask_1_14_16        = "jqueryMask_1_14_16"
 	JqueryValidation_1_19_1   = "jqueryValidation_1_19_1"
@@ -24,7 +24,7 @@ func GetAssetMap(assets ...string) (AssetMap, error) {
 		Bootstrap4:                &bootstrap4,
 		BootstrapDatepicker_1_9_0: &bootstrapDatepicker_1_9_0,
 		BootstrapSelect_1_13_9:    &bootstrapSelect_1_13_9,
-		BootstrapTable_1_15_5:     &bootstrapTable_1_15_5,
+		BootstrapTable_1_16_0:     &bootstrapTable_1_16_0,
 		Holder_2_9:                &holder_2_9,
 		JqueryMask_1_14_16:        &jqueryMask_1_14_16,
 		JqueryValidation_1_19_1:   &jqueryValidation_1_19_1,
