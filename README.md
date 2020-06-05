@@ -2,9 +2,11 @@
 
 The `himma` is sets of static files embedded in Go.
 
+***powered by [eggcrate](https://github.com/devplayg/eggcrate)***
+
 - bootstrap-datepicker-1.9.0
 - bootstrap-select-1.13.9
-- bootstrap-table-1.15.5
+- bootstrap-table-1.16.0
 - holder-2.9
 - jquery-mask-1.14.16
 - jquery-validation-1.19.1

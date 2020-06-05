@@ -1,7 +1,10 @@
 package himma
 
 import (
-	"github.com/devplayg/eggcrate"
+	"bytes"
+	"encoding/base64"
+	"encoding/gob"
+	"strings"
 )
 
 const (
@@ -50,7 +53,7 @@ func GetAssetMap(assets ...string) (AssetMap, error) {
 }
 
 func merge(assetMap AssetMap, data *string) error {
-	m, err := eggcrate.Decode(*data)
+	m, err := decode(*data)
 	if err != nil {
 		return err
 	}
@@ -60,4 +63,16 @@ func merge(assetMap AssetMap, data *string) error {
 	}
 
 	return nil
+}
+
+func decode(encoded string) (map[string][]byte, error) {
+	encoded = strings.ReplaceAll(encoded, "\n", "")
+	var fileMap map[string][]byte
+
+	decoded, err := base64.StdEncoding.DecodeString(encoded)
+	if err != nil {
+		return nil, err
+	}
+	dec := gob.NewDecoder(bytes.NewReader(decoded))
+	return fileMap, dec.Decode(&fileMap)
 }
