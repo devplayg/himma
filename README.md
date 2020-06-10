@@ -16,3 +16,7 @@ The `himma` is sets of static files embedded in Go.
 - video-js-7.7.4
 - waitMe-31.10.17
 
+
+### To do
+
+- Update favicon - https://golang.org/doc/gopher/favicon.svg

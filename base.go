@@ -142,7 +142,7 @@ func smartAdminBase() string {
                 </div>
                 <div>
                     <ul class="list-table m-0">
-                        <li><a href="intel_introduction.html fs-sm" class="text-secondary">{{.AppName}} v{{.Version}}</a></li>
+                        <li><a href="{{.Url}}" class="text-secondary">{{.AppName}} v{{.Version}}</a></li>
                     </ul>
                 </div>
             </footer>
