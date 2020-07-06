@@ -9,7 +9,7 @@ func Base() string {
 }
 
 func BaseTest() string {
-	b, _ := ioutil.ReadFile("static/base.tpl")
+	b, _ := ioutil.ReadFile("tpl/base.html")
 	return string(b)
 }
 
@@ -39,10 +39,10 @@ func smartAdminBase() string {
     <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg">
     <link rel="stylesheet" media="screen, print" href="/assets/css/fa-regular.css">
     <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-table-1.16.0/bootstrap-table.min.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/plugins/waitMe-31.10.17/waitMe.min.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" media="screen, print" href="/plugins/bootstrap-table-1.16.0/bootstrap-table.min.css">
+    <link rel="stylesheet" media="screen, print" href="/plugins/waitMe-31.10.17/waitMe.min.css">
+    <link rel="stylesheet" media="screen, print" href="/plugins/bootstrap-select-1.13.9/bootstrap-select.min.css">
+    <link rel="stylesheet" media="screen, print" href="/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.css">
     {{ block "css" . }}{{ end }}
 </head>
 <body class="mod-bg-1 nav-function-fixed">
@@ -106,7 +106,7 @@ func smartAdminBase() string {
                 <!-- we need this logo when user switches to nav-function-top -->
                 <div class="page-logo">
                     <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative">
-                        <img src="/assets/img/logo.png" alt="{{.AppName}}" aria-roledescription="logo">
+                        <img src="/img/logo.png" alt="{{.AppName}}" aria-roledescription="logo">
                         <span class="page-logo-text mr-1">{{.AppName}}</span>
                         <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
                         <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>
@@ -239,20 +239,20 @@ func smartAdminBase() string {
 <script src="/assets/js/vendors.bundle.js"></script>
 <script src="/assets/js/app.bundle.js"></script>
 <script src="/assets/js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
-<script src="/assets/plugins/waitMe-31.10.17/waitMe.min.js"></script>
-<script src="/assets/plugins/progressbar.js-1.0.1/progressbar.min.js"></script>
-<script src="/assets/plugins/moment-2.24.0/moment-with-locales.min.js"></script>
-<script src="/assets/plugins/moment-2.24.0/moment-timezone-with-data.min.js"></script>
-<script src="/assets/plugins/js.cookie-2.2.1/js.cookie-2.2.1.min.js"></script>
-<script src="/assets/plugins/jquery-validation-1.19.1/jquery.validate.min.js"></script>
-<script src="/assets/plugins/jquery-mask-1.14.16/jquery.mask.min.js"></script>
-<script src="/assets/plugins/holder-2.9/holder.min.js"></script>
-<script src="/assets/plugins/bootstrap-table-1.16.0/bootstrap-table.min.js"></script>
-<script src="/assets/plugins/bootstrap-table-1.16.0/bootstrap-table-export.min.js"></script>
-<script src="/assets/plugins/bootstrap-table-1.16.0/tableExport.min.js"></script>
-<script src="/assets/plugins/bootstrap-table-1.16.0/bootstrap-table-cookie.min.js"></script>
-<script src="/assets/plugins/bootstrap-select-1.13.9/bootstrap-select.min.js"></script>
-<script src="/assets/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.js"></script>
+<script src="/plugins/waitMe-31.10.17/waitMe.min.js"></script>
+<script src="/plugins/progressbar.js-1.0.1/progressbar.min.js"></script>
+<script src="/plugins/moment-2.24.0/moment-with-locales.min.js"></script>
+<script src="/plugins/moment-2.24.0/moment-timezone-with-data.min.js"></script>
+<script src="/plugins/js.cookie-2.2.1/js.cookie-2.2.1.min.js"></script>
+<script src="/plugins/jquery-validation-1.19.1/jquery.validate.min.js"></script>
+<script src="/plugins/jquery-mask-1.14.16/jquery.mask.min.js"></script>
+<script src="/plugins/holder-2.9/holder.min.js"></script>
+<script src="/plugins/bootstrap-table-1.16.0/bootstrap-table.min.js"></script>
+<script src="/plugins/bootstrap-table-1.16.0/bootstrap-table-export.min.js"></script>
+<script src="/plugins/bootstrap-table-1.16.0/tableExport.min.js"></script>
+<script src="/plugins/bootstrap-table-1.16.0/bootstrap-table-cookie.min.js"></script>
+<script src="/plugins/bootstrap-select-1.13.9/bootstrap-select.min.js"></script>
+<script src="/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.js"></script>
 {{ block "script" . }}{{ end }}
 </body>
 </html>`
