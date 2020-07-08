@@ -2,15 +2,15 @@ package himma
 
 import (
 	"io/ioutil"
+	"os"
 )
 
 func Base() string {
+	if _, err := os.Stat("tpl/base.html"); !os.IsNotExist(err) {
+		b, _ := ioutil.ReadFile("tpl/base.html")
+		return string(b)
+	}
 	return smartAdminBase()
-}
-
-func BaseTest() string {
-	b, _ := ioutil.ReadFile("tpl/base.html")
-	return string(b)
 }
 
 func smartAdminBase() string {
@@ -35,14 +35,13 @@ func smartAdminBase() string {
     <link rel="stylesheet" media="screen, print" href="/assets/css/themes/cust-theme-3.css">
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.svg">
     <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg">
     <link rel="stylesheet" media="screen, print" href="/assets/css/fa-regular.css">
     <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
     <link rel="stylesheet" media="screen, print" href="/plugins/bootstrap-table-1.16.0/bootstrap-table.min.css">
     <link rel="stylesheet" media="screen, print" href="/plugins/waitMe-31.10.17/waitMe.min.css">
-    <link rel="stylesheet" media="screen, print" href="/plugins/bootstrap-select-1.13.9/bootstrap-select.min.css">
-    <link rel="stylesheet" media="screen, print" href="/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" media="screen, print" href="/plugins/bootstrap-select-1.13.14/css/bootstrap-select.min.css">
     {{ block "css" . }}{{ end }}
 </head>
 <body class="mod-bg-1 nav-function-fixed">
@@ -53,7 +52,7 @@ func smartAdminBase() string {
         <aside class="page-sidebar">
             <div class="page-logo">
                 <a href="/" class="page-logo-link press-scale-down d-flex align-items-center position-relative">
-                    <img src="/assets/img/logo.png" class="" alt="" aria-roledescription="logo">
+                    <img src="/img/logo.png" class="" alt="" aria-roledescription="logo">
                     <span class="page-logo-text mr-1"> {{.AppName}}</span>
                     <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
                 </a>
@@ -61,7 +60,7 @@ func smartAdminBase() string {
             <!-- BEGIN PRIMARY NAVIGATION -->
             <nav id="js-primary-nav" class="primary-nav" role="navigation">
                 <div class="info-card">
-                    <img src="/assets/img/member.png" class="profile-image rounded-circle" alt="{{.AppName}}">
+                    <img src="/img/avatar.png" class="profile-image rounded-circle" alt="{{.AppName}}">
                     <div class="info-card-text">
                         <a href="#" class="d-flex align-items-center text-white">
                             <span class="text-truncate text-truncate-md d-inline-block">
@@ -71,7 +70,7 @@ func smartAdminBase() string {
                         <span class="d-inline-block text-truncate text-truncate-sm">{{.Phrase2}}</span>
                     </div>
 
-                    <img src="/assets/img/cover.png" class="cover" alt="cover">
+                    <img src="/img/cover.png" class="cover" alt="cover">
                 </div>
 
                 <ul id="js-nav-menu" class="nav-menu">
@@ -241,18 +240,17 @@ func smartAdminBase() string {
 <script src="/assets/js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
 <script src="/plugins/waitMe-31.10.17/waitMe.min.js"></script>
 <script src="/plugins/progressbar.js-1.0.1/progressbar.min.js"></script>
-<script src="/plugins/moment-2.24.0/moment-with-locales.min.js"></script>
-<script src="/plugins/moment-2.24.0/moment-timezone-with-data.min.js"></script>
+<script src="/plugins/moment-2.27/moment-with-locales.min.js"></script>
+<script src="/plugins/moment-2.27/moment-timezone-with-data.min.js"></script>
 <script src="/plugins/js.cookie-2.2.1/js.cookie-2.2.1.min.js"></script>
-<script src="/plugins/jquery-validation-1.19.1/jquery.validate.min.js"></script>
+<script src="/plugins/jquery-validation-1.19.2/jquery.validate.min.js"></script>
 <script src="/plugins/jquery-mask-1.14.16/jquery.mask.min.js"></script>
 <script src="/plugins/holder-2.9/holder.min.js"></script>
 <script src="/plugins/bootstrap-table-1.16.0/bootstrap-table.min.js"></script>
-<script src="/plugins/bootstrap-table-1.16.0/bootstrap-table-export.min.js"></script>
+<script src="/plugins/bootstrap-table-1.16.0/extensions/bootstrap-table-export.min.js"></script>
 <script src="/plugins/bootstrap-table-1.16.0/tableExport.min.js"></script>
-<script src="/plugins/bootstrap-table-1.16.0/bootstrap-table-cookie.min.js"></script>
-<script src="/plugins/bootstrap-select-1.13.9/bootstrap-select.min.js"></script>
-<script src="/plugins/bootstrap-datepicker-1.9.0/bootstrap-datepicker.min.js"></script>
+<script src="/plugins/bootstrap-table-1.16.0/extensions/bootstrap-table-cookie.min.js"></script>
+<script src="/plugins/bootstrap-select-1.13.14/js/bootstrap-select.min.js"></script>
 {{ block "script" . }}{{ end }}
 </body>
 </html>`
